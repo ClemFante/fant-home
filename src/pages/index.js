@@ -161,6 +161,8 @@ const IndexPage = () => (
           </p>
 
           <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
             <div className="row">
               <div className="col-6 col-12-mobile">
                 <input type="text" name="name" placeholder="Nom" />
