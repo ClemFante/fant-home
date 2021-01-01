@@ -152,12 +152,14 @@
 		letter-spacing: -1px;
 
 		&.alt {
-			color: #888;
-
 			strong {
 				color: #666;
 			}
 		}
+	}
+
+	.strong {
+		color: #666;
 	}
 
 	h3 {
@@ -733,12 +735,13 @@
 				color: #ddd;
 				color: rgba(255, 255, 255, 0.75);
 
-				h2, h3, h4, h5, h6 {
+				h3, h4, h5, h6 {
 					color: inherit;
 				}
 
 				strong {
-					color: #fff;
+					color: #666;
+					font-weight: 500;
 					border-color: inherit;
 				}
 
@@ -758,9 +761,23 @@
 				background-position: center center;
 			}
 
-			&.one {
-				background-color: #81918E;
-				background-image: url('../images/banner.jpg');
+			// &.one {
+			// 	background-color: #81918E;
+			// 	background-image: url('../images/banner.jpeg');
+			// }
+
+			&.one::before {
+				content:"";
+				background-image: url('../images/banner.jpeg');
+				opacity:0.4;
+				position:absolute;
+				top:0;
+				bottom:0;
+				right:0;
+				left:0;
+				width:auto;
+				height:auto;
+				z-index:-3;
 			}
 
 			&.two {

@@ -12,14 +12,14 @@ import garriguettes from '../assets/images/garriguettes.png'
 
 
 import pic7 from '../assets/images/pic07.jpg';
-import pic6 from '../assets/images/pic06.jpg';
+import therabiobank from '../assets/images/therabiobank.png';
 
 import pic8 from '../assets/images/light-bulb-4514505_1920.jpg';
 import Scroll from '../components/Scroll';
 
 const sections = [
   { id: 'top', name: 'Intro', icon: 'fa-home' },
-  { id: 'portfolio', name: 'Portfolio', icon: 'fa-th' },
+  { id: 'portfolio', name: 'Portofolio', icon: 'fa-th' },
   { id: 'skills', name: 'Compétences', icon: 'fa-cog' },
   { id: 'contact', name: 'Contact', icon: 'fa-envelope' },
 ];
@@ -32,12 +32,14 @@ const IndexPage = () => (
       <section id="top" className="one dark cover">
         <div className="container">
           <header>
-            <h2 className="alt">
-              Bienvenue sur le site de <strong>FANT'HOME</strong>
+            <h2 className="alt strong">
+              Bienvenue sur le site de <strong>FANT'HOME </strong>
               <br />
               Développement Web
             </h2>
-            <p>Vous pouvez consulter les différents projets déjà réalisés</p>
+            <p class="strong"> Sites Web et applications </p>
+            <p class="strong">Vous pouvez consulter les différents projets déjà réalisés</p>
+
           </header>
 
           <footer>
@@ -53,7 +55,7 @@ const IndexPage = () => (
       <section id="portfolio" className="two">
         <div className="container">
           <header>
-            <h2>Portofolio</h2>
+            <h2>Portfolio</h2>
           </header>
 
           <p>
@@ -100,7 +102,7 @@ const IndexPage = () => (
             <div className="col-4 col-12-mobile">
               <article className="item">
                 <a href="/#" className="image fit">
-                  <img src={pic6} alt="" />
+                  <img src={therabiobank} alt="" />
                 </a>
                 <header>
                   <h3>Application de gestion des stocks - Biobanking </h3>
@@ -141,9 +143,9 @@ const IndexPage = () => (
 
           <ul class="frameworks">
             <strong> Frameworks utilisés :</strong>
-            <li> Angular / Ionic / React / Gatsby </li>
+            <li> Angular 5+/ Ionic / React / Gatsby </li>
             <li> Symfony / CakePHP </li>
-            <li> Material Design / Clarity </li>
+            <li> Material Design / Bootstrap / Clarity </li>
           </ul>
         </div>
       </section>
@@ -158,7 +160,7 @@ const IndexPage = () => (
            Pour toutes questions ou demande de devis :
           </p>
 
-          <form method="post" action="#">
+          <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
             <div className="row">
               <div className="col-6 col-12-mobile">
                 <input type="text" name="name" placeholder="Nom" />
