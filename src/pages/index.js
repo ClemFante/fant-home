@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
 import SideBar from '../components/SideBar';
 
-import pic2 from '../assets/images/pic02.jpg';
+import calendar from '../assets/images/calendar.png';
 import skilvioo from '../assets/images/skilvioo.jpeg';
 import meetsumup from '../assets/images/meetsumup.png';
 import bgain from '../assets/images/bgain.png';
@@ -66,10 +66,11 @@ const IndexPage = () => (
             <div className="col-4 col-12-mobile">
               <article className="item">
                 <a href="/#" className="image fit">
-                  <img src={pic2} alt="" />
+                  <img src={calendar} alt="" />
                 </a>
                 <header>
                   <h3> Module vaccination logiciel santé</h3>
+                  <p> Mise en place d'un calendrier vaccinal automatisé sur un logiciel de gestion patientèle</p>
                 </header>
               </article>
               <article className="item">
@@ -78,6 +79,7 @@ const IndexPage = () => (
                 </a>
                 <header>
                   <h3>Application évaluation de compétences</h3>
+                  <p> Outils d'évaluation de compétences et de matching métiers et formations</p>
                 </header>
               </article>
             </div>
@@ -88,14 +90,16 @@ const IndexPage = () => (
                 </a>
                 <header>
                   <h3>Application de descriptions MeetSumUp</h3>
+                  <p> Trouver la description idéale pour des sites de rencontre </p>
                 </header>
               </article>
               <article className="item">
                 <a href="/#" className="image fit">
-                  <img src={bgain} alt="" />
+                  <img src={garriguettes} alt="" />
                 </a>
                 <header>
-                  <h3>Application de prix de marché BGain</h3>
+                  <h3>Site course à pied Les Garriguettes</h3>
+                  <p> Résultats et annonces pour l'association les Garriguettes</p>
                 </header>
               </article>
             </div>
@@ -106,14 +110,16 @@ const IndexPage = () => (
                 </a>
                 <header>
                   <h3>Application de gestion des stocks - Biobanking </h3>
+                  <p> Gestion des échantillons biologiques par une interface web intuitive</p>
                 </header>
               </article>
               <article className="item">
                 <a href="/#" className="image fit">
-                  <img src={garriguettes} alt="" />
+                  <img src={bgain} alt="" />
                 </a>
                 <header>
-                  <h3>Site course à pied Les Garriguettes</h3>
+                  <h3>Application de prix de marché BGain - En création </h3>
+                  <p> Connaitre le juste prix des objets typiques de chaque pays</p>
                 </header>
               </article>
             </div>
@@ -160,9 +166,10 @@ const IndexPage = () => (
            Pour toutes questions ou demande de devis :
           </p>
 
-          <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
+          {/* <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact"> */}
+            <form method="post" action="https://getform.io/f/243e8dea-7ff8-4767-9b10-082066fa3bf1">
+            {/* <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" /> */}
             <div className="row">
               <div className="col-6 col-12-mobile">
                 <input type="text" name="name" placeholder="Nom" />
