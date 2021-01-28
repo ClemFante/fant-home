@@ -608,10 +608,12 @@
 
 	#logo {
 		position: relative;
-		margin: 1.75em 1.5em 1.5em 1.5em;
 		min-height: 48px;
 		cursor: default;
 
+		.header {
+			margin: 0 1.5em 1.5em 1.5em;
+		}
 		h1 {
 			position: relative;
 			color: #fff;

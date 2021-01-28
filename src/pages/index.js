@@ -10,8 +10,6 @@ import meetsumup from '../assets/images/meetsumup.png';
 import bgain from '../assets/images/bgain.png';
 import garriguettes from '../assets/images/garriguettes.png'
 
-
-import pic7 from '../assets/images/pic07.jpg';
 import therabiobank from '../assets/images/therabiobank.png';
 
 import pic8 from '../assets/images/light-bulb-4514505_1920.jpg';
@@ -37,7 +35,7 @@ const IndexPage = () => (
               <br />
               Développement Web
             </h2>
-            <p class="strong"> Sites Web et applications </p>
+            <p class="strong"> Sites Web et applications - Responsive Design - Site vitrine ou applicatif </p>
             <p class="strong">Vous pouvez consulter les différents projets déjà réalisés</p>
 
           </header>

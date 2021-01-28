@@ -4,7 +4,9 @@ import Header from './Header';
 import Nav from './Nav';
 import TopNav from './TopNav';
 import config from '../../../config';
-const pic = require('../../assets/images/avatar.png');
+const logoFantHome = require('../../assets/images/Fanthome.svg');
+const textFantHome = require('../../assets/images/Fanthome-text.svg');
+
 
 export default function SideBar({ sections = [] }) {
   const [headerOpen, toggleHeader] = useState(false);
@@ -17,7 +19,8 @@ export default function SideBar({ sections = [] }) {
       <div id="header">
         <div className="top">
           <Header
-            avatar={pic}
+            avatar1={logoFantHome}
+            avatar2={textFantHome}
             title={config.authorName}
             heading={config.heading}
           />
