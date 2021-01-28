@@ -30,7 +30,7 @@ module.exports = {
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'mailto:clement.fanteria@gmail.com',
+      url: 'mailto:contact@fant-home.fr',
     },
   ],
 };
